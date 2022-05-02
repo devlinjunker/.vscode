@@ -4,6 +4,19 @@
     "window.zoomLevel": -2,
     "editor.tabSize": 2,
 
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-i"
+            ]
+        }
+    },
+
+    "files.associations": {
+        "*.css": "scss"
+    },
+
     "todo-tree.general.tags": [
         "BUG",
         "HACK",
@@ -31,7 +44,77 @@
         "token": "{title}",
         "description": "Insert note title from input box.",
         "format": "Untitled"
-    }]
+    }],
+
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "karmaTestExplorer.autoWatchBatchDelay": 1000,
+    "karmaTestExplorer.projectType": "karma",
+    "karmaTestExplorer.enableExtension": true,
+    "karmaTestExplorer.browser": "Chrome",
+    "karmaTestExplorer.angularProcessCommand": "npm run test-dev",
+    
+    "better-comments.tags": [
+        {
+            "tag": "note",
+            "color": "#faefaa",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ]
 }
 
 // Extensions List
