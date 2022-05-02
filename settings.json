@@ -1,0 +1,62 @@
+{
+    "files.autoSave": "onWindowChange",
+
+    "window.zoomLevel": -2,
+    "editor.tabSize": 2,
+
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    
+    
+    
+    "vsnotes.defaultNotePath": "/Users/devlinjunker/Code/notes",
+    // Default note title. Utilizes tokens set in vsnotes.tokens.
+    "vsnotes.defaultNoteTitle": "{dt}_{title}",
+    "vsnotes.tokens": [{
+        "type": "datetime",
+        "token": "{dt}",
+        "format": "YYYY-MM-DD_HH-mm",
+        "description": "Insert formatted datetime."
+    },
+    {
+        "type": "title",
+        "token": "{title}",
+        "description": "Insert note title from input box.",
+        "format": "Untitled"
+    }]
+}
+
+// Extensions List
+
+// # General
+// - [ ] Better Comments
+// - [ ] TODO Tree
+// - [ ] Remote
+// - [ ] Intellicode
+// - [ ] Fix JSON
+// - [ ] json (ZainChen)
+// - [ ] Path Intellisense
+// - [ ] VSNotes (testing?)
+// 
+// # Bash 
+// - [ ] Bats (Bash Testing)
+//
+// # Javascript/Typescript
+// - [ ] ESLint?
+// - [ ] Prettier (both?)
+// 
+// # FEND
+// - [ ] Vue?
+// - [ ] Angular Language Services
+// - [ ] DevTools for Chrome
+//
+// # Java
+// - [ ] Extension Pack for Java
