@@ -1,7 +1,35 @@
+// Extensions List
+
+// # General
+// - [x] Better Comments
+// - [x] TODO Tree
+// - [ ] Remote
+// - [x] Intellicode
+// - [x] Fix JSON
+// - [x] json (ZainChen)
+// - [x] Path Intellisense
+// - [x] VSNotes (testing?)
+// 
+// # Bash 
+// - [ ] Bats (Bash Testing)
+//
+// # Javascript/Typescript
+// - [ ] ESLint?
+// - [x] Prettier (both?)
+// 
+// # FEND
+// - [ ] Vue?
+// - [x] Angular Language Services
+// - [x] DevTools for Chrome
+//
+// # Java
+// - [x] Extension Pack for Java
+
+
 {
     "files.autoSave": "onWindowChange",
 
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1,
     "editor.tabSize": 2,
 
     "terminal.integrated.profiles.osx": {
@@ -29,8 +57,8 @@
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
     
     
+    "vsnotes.defaultNotePath": "/Users/djunker/marin/notes",
     
-    "vsnotes.defaultNotePath": "/Users/devlinjunker/Code/notes",
     // Default note title. Utilizes tokens set in vsnotes.tokens.
     "vsnotes.defaultNoteTitle": "{dt}_{title}",
     "vsnotes.tokens": [{
@@ -116,30 +144,3 @@
         }
     ]
 }
-
-// Extensions List
-
-// # General
-// - [ ] Better Comments
-// - [ ] TODO Tree
-// - [ ] Remote
-// - [ ] Intellicode
-// - [ ] Fix JSON
-// - [ ] json (ZainChen)
-// - [ ] Path Intellisense
-// - [ ] VSNotes (testing?)
-// 
-// # Bash 
-// - [ ] Bats (Bash Testing)
-//
-// # Javascript/Typescript
-// - [ ] ESLint?
-// - [ ] Prettier (both?)
-// 
-// # FEND
-// - [ ] Vue?
-// - [ ] Angular Language Services
-// - [ ] DevTools for Chrome
-//
-// # Java
-// - [ ] Extension Pack for Java
