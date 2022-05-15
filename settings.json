@@ -1,37 +1,21 @@
-// Extensions List
-
-// # General
-// - [x] Better Comments
-// - [x] TODO Tree
-// - [ ] Remote
-// - [x] Intellicode
-// - [x] Fix JSON
-// - [x] json (ZainChen)
-// - [x] Path Intellisense
-// - [x] VSNotes (testing?)
-// 
-// # Bash 
-// - [ ] Bats (Bash Testing)
-//
-// # Javascript/Typescript
-// - [ ] ESLint?
-// - [x] Prettier (both?)
-// 
-// # FEND
-// - [ ] Vue?
-// - [x] Angular Language Services
-// - [x] DevTools for Chrome
-//
-// # Java
-// - [x] Extension Pack for Java
-
-
+// See extensions in extension.md
 {
     "files.autoSave": "onWindowChange",
-
     "window.zoomLevel": -1,
     "editor.tabSize": 2,
-
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+        "source.formatDocument",
+        "source.fixAll.eslint"
+    ],
     "terminal.integrated.profiles.osx": {
         "zsh": {
             "path": "zsh",
@@ -40,11 +24,9 @@
             ]
         }
     },
-
     "files.associations": {
         "*.css": "scss"
     },
-
     "todo-tree.general.tags": [
         "BUG",
         "HACK",
@@ -55,25 +37,23 @@
         "[x]"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    
-    
-    "vsnotes.defaultNotePath": "/Users/djunker/marin/notes",
-    
+    "vsnotes.defaultNotePath": "/Users/devlinjunker/notes",
     // Default note title. Utilizes tokens set in vsnotes.tokens.
     "vsnotes.defaultNoteTitle": "{dt}_{title}",
-    "vsnotes.tokens": [{
-        "type": "datetime",
-        "token": "{dt}",
-        "format": "YYYY-MM-DD_HH-mm",
-        "description": "Insert formatted datetime."
-    },
-    {
-        "type": "title",
-        "token": "{title}",
-        "description": "Insert note title from input box.",
-        "format": "Untitled"
-    }],
-
+    "vsnotes.tokens": [
+        {
+            "type": "datetime",
+            "token": "{dt}",
+            "format": "YYYY-MM-DD_HH-mm",
+            "description": "Insert formatted datetime."
+        },
+        {
+            "type": "title",
+            "token": "{title}",
+            "description": "Insert note title from input box.",
+            "format": "Untitled"
+        }
+    ],
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -86,7 +66,6 @@
     "karmaTestExplorer.enableExtension": true,
     "karmaTestExplorer.browser": "Chrome",
     "karmaTestExplorer.angularProcessCommand": "npm run test-dev",
-    
     "better-comments.tags": [
         {
             "tag": "note",
@@ -142,5 +121,17 @@
             "bold": false,
             "italic": false
         }
-    ]
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
 }
